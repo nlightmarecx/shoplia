@@ -1,0 +1,65 @@
+/* services.css */
+
+/* Reset styles for consistency across browsers */
+* {
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background-color: #1e1e1e;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styles specific to services page */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #111;
+}
+
+.navbutton {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Main content styles for the services page */
+main {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #47a3ff;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 20px;
+    color: #f0f0f0;
+}
+
+p, ul {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+button {
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #47a3ff;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #3399cc;
+}
