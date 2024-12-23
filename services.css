@@ -1,65 +1,241 @@
-/* services.css */
+/* -----------------------------------------
+MEYERWEB RESET
+http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-/* Reset styles for consistency across browsers */
-* {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ------------- END OF MEYERWEB RESET------------- */
+/* -------------START OF GENERAL STYLES------------ */
+
+*{
     box-sizing: border-box;
-    color: white;
+    font-family: 'Roboto', sans-serif, 'Times New Roman', Times, serif
 }
 
-body {
-    background-color: #1e1e1e;
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
+body{
+    background: #5e4840;
+    color: #f9f1b8;
+    user-select: none;
 }
 
-/* Navbar styles specific to services page */
-.navbar {
+.home-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    border: solid 3px black;
+}
+
+.header{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif, 'Times New Roman', Times, serif;
+    font-weight:lighter;
+    font-size: 1.4rem;
+    user-select: none;
+    color: #f9f1b8;
+}
+
+.buttons-header{
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    background-color: #111;
 }
 
-.navbutton {
-    text-decoration: none;
-    color: white;
+.nav-button{
+    background-color: #5e4840;
+    border: solid 3px black;
+    padding: 0.5rem;
+    margin-top: -1.4rem;
+    width: 7rem;
+}
+
+.nav{
+    font-size: 1.1rem;
+}
+
+/* ------------- END OF GENERAL STYLES------------- */
+/* ------------START OF NEWS ITEM STYLES----------- */
+
+.main-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #c3a978;
+    margin: 0.6rem;
+    color: black;
+}
+
+.greet-div{
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
     font-weight: bold;
-    font-size: 1.2rem;
+    margin-top: 2.5vh;
+    margin-bottom: 2vh;
 }
 
-/* Main content styles for the services page */
-main {
-    padding: 20px;
+.play-btn-div{
+    display: flex;
+    justify-content: center;
 }
 
-h1 {
-    font-size: 3rem;
-    color: #47a3ff;
+.play-btn{
+    border-color: #c69016;
+    color: #c3a978;
+    background-image: linear-gradient(
+        -10deg,
+        rgba(255, 153, 0, 0.2),
+        rgba(255, 153, 0, 0.45),
+        rgba(255, 153, 0, 0.2)
+    ); 
 }
 
-h2 {
-    font-size: 2rem;
-    margin-top: 20px;
-    color: #f0f0f0;
+.avatar-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90vh;
 }
 
-p, ul {
-    font-size: 1rem;
-    line-height: 1.6;
+.img-div{
+    display: flex;
+    justify-content: center;
 }
 
+.img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.line-div{
+    display: flex;
+    justify-content: center;
+}
+
+.thick-line {
+    height: 4px;             /* Set the thickness of the line */
+    background-color: #683f00;   /* Set the color of the line */
+    border: none;             /* Remove any borders */
+    width: 80%;              /* Make the line span the full width of the container */
+    max-width: 400px
+}
+
+.cta-btns-div{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10vh;
+}
+
+
+  
+
+/* ------------- END OF HEADER STYLES-------------- */
+/* ------------START OF MAIN ITEM STYLES----------- */
+
+
+
+
+
+/* ---------------Style the submit button --------------- */
 button {
     font-weight: bold;
-    padding: 10px 20px;
-    background-color: #47a3ff;
-    border: none;
+    padding: 6px 20px;
+    margin-left: 15px;
+    border: solid 2px rgb(47, 217, 255);
+    border-radius: 4px;
     cursor: pointer;
-    color: white;
-    font-size: 1.1rem;
-    border-radius: 5px;
+    background-color: black;
+    background-image: linear-gradient(
+        -10deg,
+        rgba(0, 255, 255, 0.2),
+        rgba(0, 255, 255, 0.3),
+        rgba(0, 255, 255, 0.35),
+        rgba(0, 255, 255, 0.3),
+        rgba(0, 255, 255, 0.2)
+    ); 
+    color: rgb(47, 217, 255);
 }
 
-button:hover {
-    background-color: #3399cc;
+button:hover{
+    border: solid 2px rgb(61, 255, 47);
+    background-image: linear-gradient(
+        10deg,
+        rgba(0, 255, 255, 0.2),
+        rgba(0, 255, 255, 0.3),
+        rgba(0, 255, 255, 0.35),
+        rgba(0, 255, 255, 0.3),
+        rgba(0, 255, 255, 0.2)
+    ); 
+    color: rgb(61, 255, 47);
+    box-shadow: 0 0 3px, 0 0 5px royalblue inset;
+    transition: box-shadow 0.15s;
+    scale: 1.02;
+}
+
+button:active{
+    background-image: linear-gradient(
+        -10deg,
+        rgba(0, 255, 255, 0.25),
+        rgba(0, 255, 255, 0.35),
+        rgba(0, 255, 255, 0.4),
+        rgba(0, 255, 255, 0.35),
+        rgba(0, 255, 255, 0.25)
+    ); 
+    box-shadow: 0 0 5px, 0 0 7px royalblue inset;
+    transition: box-shadow 0.05s;
+    scale: 0.98;
+    color: rgb(51, 245, 37);
+    border: solid 2px rgb(61, 255, 47);
+}
+
+/* ---------------Style the footer--------------- */
+
+.news-div {
+    text-align: center;
+    color: #fff;   
+    align-items: center;
+    justify-content: center;
 }
