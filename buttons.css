@@ -2,7 +2,7 @@ button {
     font-weight: bold;
     padding: 6px 20px;
     margin: 5px;
-    border: solid 2px rgb(255, 255, 255);
+    border: solid 0.5px rgba(255, 255, 255, 0.4);
     /* border: solid 2px rgb(47, 217, 255); */
     border-radius: 8px;
     cursor: pointer;

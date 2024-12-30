@@ -1,0 +1,224 @@
+/* -------------START OF GENERAL STYLES------------ */
+
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif, 'Times New Roman', Times, serif
+}
+
+body{
+    background: black;
+    color: #f9f1b8;
+    user-select: none;
+}
+
+.home-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    border: solid 1px white;
+    border-left: solid 0;
+    border-right: solid 0;
+}
+
+.header{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif, 'Times New Roman', Times, serif;
+    font-weight:lighter;
+    font-size: 1.1rem;
+    user-select: none;
+    color: #f9f1b8;
+}
+
+.buttons-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-button{
+    background-color: black;
+    border: solid 1px burlywood;
+    padding: 0.4rem;
+    margin-top: -1.4rem;
+    width: 3.2rem;
+}
+
+.nav{
+    font-size: 0.8rem;
+    text-align: right;
+}
+
+.nav-btn-right{
+    text-align: right;
+}
+
+/* ------------- END OF GENERAL STYLES------------- */
+/* ------------START OF NEWS ITEM STYLES----------- */
+
+.base-main-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #c3a978;
+    border:solid 3px #5e4840;
+    border-radius: 0 0 15px 15px;
+    margin: 0.6rem;
+    max-width: 400px;
+    color: black;
+    clip-path: polygon(
+    20% 0%, 80% 0%, /* Top edges */
+    100% 10%, 100% 70%, /* Right edges */
+    100% 100%, 0% 100%, /* Bottom edges */
+    0% 70%, 0% 10% /* Left edges */
+  );}
+
+.chessmen-div{
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 2.5vh;
+    margin-bottom: 0;
+}
+
+.username-div{
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-top: 0.5vh;
+    margin-bottom: 2vh;
+}
+
+.play-btn-div{
+    display: flex;
+    justify-content: center;
+}
+
+.play-btn{
+    border-color: #c69016;
+    color: #c3a978;
+    background-image: linear-gradient(
+        -10deg,
+        rgba(255, 153, 0, 0.2),
+        rgba(255, 153, 0, 0.45),
+        rgba(255, 153, 0, 0.2)
+    ); 
+}
+
+.hexagon-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none; /* Ensure clicks pass through if necessary */
+}
+
+.hexagon {
+    width: 5rem;
+    height: 3.5rem;
+    background-color: #5e4840;
+    color: #f9f1b8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 0.68rem;
+    font-weight: bold;
+    clip-path: polygon( 
+        25% 0%,    /* Top-left point */
+        75% 0%,    /* Top-right point */
+        100% 50%,  /* Middle-right point */
+        75% 100%,  /* Bottom-right point */
+        25% 100%,  /* Bottom-left point */
+        0% 50%     /* Middle-left point */
+    );
+    pointer-events: auto; /* Re-enable clicks */
+}
+
+.left-hexagon {
+    position: absolute;
+    left: -5.8%; /* Adjust for spacing */
+}
+
+.right-hexagon {
+    position: absolute;
+    right: -5.8%; /* Adjust for spacing */
+}
+
+.left-hexagon:nth-child(1),
+.right-hexagon:nth-child(4) {
+    top: 5rem; /* Top position for first hexagons */
+}
+
+.left-hexagon:nth-child(2),
+.right-hexagon:nth-child(5) {
+    top: 12rem; /* Middle position for second hexagons */
+}
+
+.left-hexagon:nth-child(3),
+.right-hexagon:nth-child(6) {
+    top: 19rem; /* Bottom position for third hexagons */
+}
+
+
+.avatar-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #e8d8c9;
+    border-radius: 15px;
+}
+
+.img-div{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 0 0;
+}
+
+.img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.line-div{
+    display: flex;
+    justify-content: center;
+}
+
+.thick-line {
+    height: 4px;             /* Set the thickness of the line */
+    background-color: black;   /* Set the color of the line */
+    border: none;             /* Remove any borders */
+    min-width: 250px;
+    width: 300px;              /* Make the line span the full width of the container */
+    max-width: 400px;
+}
+
+.cta-btns-div{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 5rem 0;
+}
+
+
+  
+
+/* ------------- END OF HEADER STYLES-------------- */
+/* ------------START OF MAIN ITEM STYLES----------- */
+
+
+
+
+
+/* ---------------Style the submit button --------------- */
+
+
+/* ---------------Style the footer--------------- */

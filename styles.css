@@ -1,61 +1,38 @@
-/* -----------------------------------------
-MEYERWEB RESET
-http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/* ------------- END OF MEYERWEB RESET------------- */
 /* -----------------START OF ROOT----------------- */
 
 
 /* -----------------END OF ROOT------------------ */
 /* -----------START OF GENERAL STYLES------------ */
 
+
+@keyframes glow {
+    0% {
+        text-shadow: 
+            0 0 5px #ffffff, 
+            0 0 10px #ffffff, 
+            0 0 20px #ff00ff, 
+            0 0 30px #ff00ff, 
+            0 0 40px #ff00ff;
+    }
+    /* Makes Shadow blink-animated, increase and decrease */
+    50% {
+        text-shadow: 
+            0 0 10px #ffffff, 
+            0 0 20px #ffffff, 
+            0 0 40px #ff00ff, 
+            0 0 60px #ff00ff, 
+            0 0 80px #ff00ff;
+    }
+    100% {
+        text-shadow: 
+            0 0 5px #ffffff, 
+            0 0 10px #ffffff, 
+            0 0 20px #ff00ff, 
+            0 0 30px #ff00ff, 
+            0 0 40px #ff00ff;
+    }
+}
 
 *{
     box-sizing: border-box;
@@ -75,14 +52,14 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 35px;
+    margin: 1.4rem 1.1rem;
 }
 
 .navbutton {
     text-decoration: none;
     font-family: 'Roboto', sans-serif, 'Times New Roman', Times, serif;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     user-select: none;
 }
 
@@ -111,18 +88,19 @@ align-items: center;
 }
 
 .title{
-    font-size: 5.5rem;
+    font-size: 5.1rem;
     margin: 75px 15px 15px 15px;
 }
 
-/* Style for the container to center the image */
+/* Style for the container to center the image
 .img-div {
-    display: flex; /* Use Flexbox for centering */
-    justify-content: center; /* Horizontally center */
-    align-items: center; /* Vertically center */
-    height: 50vh; /* Full viewport height */
+    display: flex; /* Use Flexbox for centering 
+    justify-content: center; /* Horizontally center 
+    align-items: center; /* Vertically center 
+    height: 50vh; /* Full viewport height 
   }
-  
+  */
+
   /* Style for the image itself */
   .img-div img {
     max-width: 100%; /* Ensure the image scales responsively */
@@ -133,14 +111,20 @@ align-items: center;
     margin: 5px;
 }
 
+.text-glow{
+    text-shadow: 
+    0 0 10px #ffffff, 
+    0 0 10px #ffffff, 
+    0 0 190px #ffffff;
+}
+
+/*
 h1{
-    /*
     color: transparent;
     background: url("backgroundImg.png") right/cover no-repeat fixed;
     -webkit-background-clip: text;
     background-clip: text;
-    */
-}
+}*/
 
 .cta{
     margin: 15px 15px 400px 15px;
