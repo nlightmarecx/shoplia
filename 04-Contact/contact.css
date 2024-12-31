@@ -1,0 +1,132 @@
+:root{
+    --Blue: radial-gradient(
+        rgb(4, 9, 40),
+        rgb(8, 18, 80),
+        rgb(8, 18, 80),
+    );
+    --form-width: calc(100vw - 20vw); 
+    --form-width2: clamp(90vw, 80vw, 60rem) /*smallest, ideal, largest */
+}
+
+@font-face{
+    font-family: Norse-Bold;
+    src: url("/01c-Home-Fonts/Norse-Bold.otf");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Roboto', sans-serif, 'Times New Roman', Times, serif
+}
+
+
+/* END OF GENERAL STYLES
+----------------------------------------*/
+
+body{
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin: 1.4rem 1.1rem 0 1.4rem;
+}
+
+h1{
+    font-size: 3.5rem;
+    font-family: 'Norse-Bold';
+    text-align: center;
+    margin: 1.2rem auto 1.4rem auto;
+    color: transparent;
+    background: url("contact-bg-Img.jpg") right/cover no-repeat fixed;
+    -webkit-background-clip: text;
+    background-clip: text;
+    user-select: none;
+}
+
+h2{
+    font-size: 2rem;
+    text-shadow: 0 0 1px cyan, 0 0 22px royalblue;
+    font-family: 'Norse-Bold';
+    text-align: center;
+    margin: 0px auto 20px auto;
+}
+
+.form-div{
+    width: var(--form-width);
+    font-family: "Norse-Bold";
+    margin: 50px auto;
+    padding: 20px;
+    background: center/235px no-repeat fixed url("odin-lined.png"), right/cover no-repeat fixed url("contact-bg-Img.jpg");
+    border-radius: 8px;
+    border: solid 2px rgba(0, 255, 255, 0.65);
+    box-shadow: 0 0 7.5px 4px royalblue;  
+}
+
+.fieldset-div {
+    background-color: rgba(0, 0, 0, 0.85);
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    border: 1px solid rgba(0, 255, 255, 0.35);
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fieldset-div input, select, textarea{
+    width: max(190px, 47%);
+    font-weight: bold;
+    background-color: transparent;
+    background-image: radial-gradient(
+        rgba(65, 105, 225, 0.05),
+        rgba(65, 105, 225, 0.24)
+    );
+    border-radius: 3px;
+    margin: 5px 10px;
+    padding: 5px 10px;
+}
+
+.fieldset-div textarea{
+    width: max(190px, 96%);
+}
+
+legend{
+    font-size: 1.35rem;
+    color: rgba(0, 255, 255, 0.65);
+}
+
+button {
+    font-weight: bold;
+    padding: 8px 20px;
+    margin-left: 15px;
+    border: solid 2px rgb(47, 217, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: black;
+    background-image: linear-gradient(
+        -10deg,
+        rgba(0, 255, 255, 0.2),
+        rgba(0, 255, 255, 0.3),
+        rgba(0, 255, 255, 0.35),
+        rgba(0, 255, 255, 0.3),
+        rgba(0, 255, 255, 0.2)
+    ); 
+    color: rgb(47, 217, 255);
+}
+
+/* ---------------Style the footer--------------- */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    color: #fff;
+    
+}

@@ -1,0 +1,14 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.4rem 1.1rem;
+}
+
+.navbutton {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 0.8rem;
+    user-select: none;
+}
