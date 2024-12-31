@@ -2,7 +2,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1.4rem 1.1rem;
+    padding: 1.4rem 1.1rem;
 }
 
 .navbutton {
