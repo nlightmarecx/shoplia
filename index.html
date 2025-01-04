@@ -5,52 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>diymind</title>
-    <link rel="stylesheet" href="01a-Home-Styles/meyerwebReset.css">
-    <link rel="stylesheet" href="01a-Home-Styles/nav-header.css"/>
-    <link rel="stylesheet" href="01a-Home-Styles/buttons.css"/>
-    <link rel="stylesheet" href="01a-Home-Styles/visuals.css"/>  
-    <link rel="stylesheet" href="01a-Home-Styles/styles.css"/> 
-    <script rel="script.js" charset="UTF-8" defer></script>
+    <link rel="shortcut icon" href="images/webpageImg.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/meyerwebReset.css">
+    <link rel="stylesheet" href="css/nav-header.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/gptstyle.css">
+    <!-- Link to the separate JS file -->
+    <script src="toys.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
 <body>
-    <header class="navbar">
-        <div><h3><a class="navbutton" href="03-Works/works.html">works</a></h3></div>
-        <div class="right"><h3><a class="navbutton" href="02-About/about.html">about</a></h3></div>
-    </header>
-    <main>
-        <div class="animation">
-
-        </div>
-        <div class="title-div"> 
-            <h1 class="title">diymind</h1>
-        <!-- <div class="img-div"><img src="logo2.jpg" alt="description of image"></div>
-        <h3 class="motto">Soul-breathen apparel for your fashion brand</h2>
-         <h3 class="motto">authenticate & digitalize your apparel and jewelry</h2>-->
-        <!-- <h3 class="motto">Technology integrated fabrics</h2>
-            <h3 class="motto">Smart fabrics for your fashion brand</h2>
-            <h3 class="motto">you mold, felt, create, and we breathe in souls</h2>-->
-            <h3 class="motto"><span class="glow text-glow">YOU</span> mold, felt, create, we make it <span class="glow text-glow">GLOW</span></h2>
-        </div>
-        <div class="cta">
-            <button><a style="text-decoration: none;" href="04-Contact/contact.html">Contact</a></button>
-        </div>
-    </main>
+        <!-- ----------- SECTION GAP, START OF AVATAR SECTION ----------- -->
+        <main>
+            <header>
+                <h3 class="nav-button"></h3>
+            </header>        
+        </main>
+        <!-- ----------- SECTION GAP, START OF AVATAR SECTION ----------- -->
+        <div class="container">
+            <img src="./images/profile.jpg" alt="Profile Picture" class="profile-pic">
+            <div class="title">Eline Melissen</div>
+            <div class="description">Sculpting the surreal<br>
+                Ceramist/designer based in the Netherlands
+            </div>
+        
+            <div class="social-links">
+                <a href="https://elinemelissen.com/" target="_blank">
+                    <img src="images/icons/website.png" alt="Go Back" class="shop-icon"
+                    width="27" height="27">
+                </a>
+                <a href="https://www.instagram.com/elinemelissen/" target="_blank">
+                    <img src="images/icons/instagram.png" alt="Go Back" class="shop-icon"
+                    width="25" height="25">
+                </a>
+                <a href="https://www.behance.net/elinemelissen" target="_blank">
+                    <img src="images/icons/behance.png" alt="Go Back" class="shop-icon"
+                    width="25" height="25">
+                </a>
+                <a href="https://vimeo.com/user82089464" target="_blank">
+                    <img src="images/icons/vimeo.png" alt="Go Back" class="shop-icon"
+                    width="25" height="25">
+                </a>
+                <a href="mailto:info.elinemelissen@gmail.com" target="_blank">
+                    <img src="images/icons/mail.png" aria-label="Send Email" alt="Go Back" class="shop-icon"
+                    width="25" height="25">
+                </a>
+            </div>
     
-    <footer>
-        <p>
-            &copy;
-            <script>
-                document.write(new Date().getFullYear())
-            </script>  
-            Polypore Warrios, LLC. All Rights Reserved.
-        </p>
-        <p>
-            <a href="https://github.com/nlightmarecx" target="_blank">
-                <img src="github-icon.png" alt="GitHub Logo" width="14" height="14">
-                luka bagdavadze
-            </a>
-        </p>
-    </footer>
+            <div class="product-list">
+                <a class="nav header" href="blueFace/blueFace.html"><div class="product">
+                <img src="./images/magnetFaces/blueFace-full body.jpg" alt="Product 1">
+                <div class="product-name">Product 1</div></div></a>
+                
+                <a class="nav header" href="hedgehog/hedgehog.html"><div class="product">
+                <img src="./images/magnetFaces/SunFace.jpg" alt="Product 2">
+                <div class="product-name">Product 2</div></div></a>
+
+              
+                <a class="nav header" href="hedgehog/hedgehog.html"><div class="product">
+                <img src="./images/magnetFaces/skyblueFace.jpg" alt="Product 2">
+                <div class="product-name">Product 2</div></div></a>
+                
+                <a class="nav header" href="bird/bird.html"><div class="product">
+                <img src="./images/magnetFaces/PinkFace-full body.jpg" alt="Product 1">
+                <div class="product-name">Product 1</div></div></a>
+            </div>
+            <div class="product-list">
+                <a class="nav header" href="services.html"><div class="product">
+                <img class="hedgehogImg" src="./images/woolToys/hedgehog.png" alt="Product 1">
+                <div class="product-name">Product 1</div></div></a>
+            </div>
+        </div>
 </body>
 </html>
