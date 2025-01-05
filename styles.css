@@ -93,12 +93,6 @@ main{
         margin: 0.2rem 0;
     }
 
-.call-div{
-    padding: 1rem;
-    background-color: rgb(248, 238, 226);
-    border-radius: 2.5rem 0 0 0;
-}
-
 .hedgehogImg{
     filter: drop-shadow(-2px 4px 12px rgba(0, 0, 0, 0.5));
 }

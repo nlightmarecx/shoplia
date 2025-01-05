@@ -81,9 +81,13 @@ main{
 }
 
     .title{
-        margin: 0.6rem 0 1rem 0;
+        margin: 0.6rem 0 0 0;
         font-weight: bold;
         font-size: 1.2rem;
+    }
+
+    .abilities{
+        margin: 0.2rem 0 1rem 0;
     }
 
     .description{
@@ -93,13 +97,65 @@ main{
     span{
         font-weight: bold;
     }
+    
+.material-div{
+    background: rgb(248, 238, 226);
+    padding: 1rem 0 1rem 1.2rem;
+    color: #5e4840;
+    border-radius: 2.5rem 0 0 2.5rem;
+}
 
-    .abilities{
-        margin: 0.2rem 0;
-    }
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.scrollable-media{
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding: 1rem 0;
+    margin: 0 0.2rem;
+    scroll-snap-type: x mandatory;}
+
+.media-item {
+    flex: 0 0 auto;
+    height: 100px;
+    height: auto;
+    scroll-snap-align: start;
+    background: #f8f8f8;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.media-img{
+    height: 150px;
+    object-fit: cover;
+
+}
+
+.buy-div-bg-color{
+    background-color: rgb(248, 238, 226);
+
+}
+
+.buy-div{
+    background: white;
+    padding: 1rem 0 1rem 1.2rem;
+    color: #5e4840;
+    border-radius: 0 2.5rem 2.5rem 0;
+}
+
+.call-div-bg-color{
+    background-color: white;
+}
 
 .call-div{
     padding: 1rem;
     background-color: rgb(248, 238, 226);
     border-radius: 2.5rem 0 0 0;
 }
+
