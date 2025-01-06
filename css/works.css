@@ -5,6 +5,7 @@ main{
     border-radius: 0 0 0 2.5rem;
 }
 
+
 .img-div{
     display: flex;
     justify-content: center;
@@ -37,25 +38,13 @@ main{
 .speaker-on{
     position: absolute;
     margin-left: 10rem;
-    margin-top: 3.7rem;
-    padding: 1rem;
-}
-
-.language{
-    position: absolute;
-    margin-top: 0;
-    margin-left: 10.2rem;
+    padding: 1.6rem;
 }
 
 @media screen and (max-width: 768px) {
     .speaker-on{
-        right: 1rem;
+        right: -0.8rem;
     }
-
-    .language{
-        right: 1.15rem;
-    }
-
 }
 
 .oth-optios-div{
@@ -94,7 +83,7 @@ main{
 
 .info-div{
     background: white;
-    padding: 1rem 0 1rem 1.2rem;
+    padding: 1rem 0.8rem 1rem 1.2rem;
     color: #5e4840;
     border-radius: 0 2.5rem 2.5rem 0;
 }
@@ -185,3 +174,11 @@ main{
     border-radius: 2.5rem 0 0 0;
 }
 
+.upload-container {
+    margin-top: 1rem;
+}
+
+.upload-label {
+    display: block;
+    margin-bottom: 0.5rem;
+}

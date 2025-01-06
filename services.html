@@ -27,12 +27,9 @@
         <!-- ----------- SOUND & LANGUAGE BUTTON ----------- -->
         <div class="speaker-div">
             <div class="nav-button">
-                <img id="language" src="images/languages/english.png" class="speaker-on language" alt="language Icon" width="50" height="50">
-            </div>
-            <div class="nav-button">
-                <img id="speaker" src="images/speaker-on.png" class="speaker-on" alt="Speaker Icon" width="58"
+                <img id="speaker" src="images/speaker-off.png" class="speaker-on" alt="Speaker Icon" width="58"
                     height="58">
-                <audio id="audio-file" src="audio/hargalaten.mp3" autoplay></audio>
+                <audio id="audio-file" src="audio/hedgehogLukaSpeech.m4a"></audio>
             </div>
         </div>
         <!-- ----------- MAIN TOY ----------- -->
@@ -44,7 +41,7 @@
             <div class="oth-optios-div">
                 <div class="option-toy-div"><img class="option-toy img" src="./images/woolToys/hedgehog.png"
                         alt="Hendgehog wool toy image"></div>
-                <div class="option-toy-div"><img class="option-toy img" src="images/woolToys/hedgehog.png"
+                <div class="option-toy-div"><img class="option-toy img" src="./images/woolToys/hedgehog.png"
                         alt="Hendgehog wool toy image"></div>
                 <div class="option-toy-div"><img class="option-toy img" src="./images/woolToys/hedgehog.png"
                         alt="Hendgehog wool toy image"></div>
@@ -59,8 +56,8 @@
         <div class="info-div">
             <h3 class="title">Little Hedgehog </h3>
             <p class="abilities"><span>Special Skills:</span> Chases fallen leaves and catches dreams</p>
-            <p class="description">This little guy isn’t just a toy, he’s a milestone! My very first felted
-                creation and the very first cyborg toy too!</p>
+            <p class="description">This little guy isn’t just a toy, he’s a milestone! He is my very first felted
+                creation and perhaps the very first nfc-chipped wool-toy too!</p>
         </div>
     </div>
     <!-- ----------- MEMORIES SECTION ----------- -->
@@ -70,23 +67,12 @@
             <div>
                 <p class="material">Take and upload your photo(s) with your new toy!</p>
             </div>
-            <div class="scrollable-media">
-                <iframe class="media-item" width="300" height="200" src="https://www.youtube.com/embed/8Yc6cZiP6nw"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
+            <div class="scrollable-media" id="media-gallery">
                 <img class="media-item media-img" src="./images/magnetFaces/orangeFace.jpg" alt="Image 1">
-                <img class="media-item media-img" src="./images/magnetFaces/blueFace-full body.jpg" alt="Image 2">
-                <img class="media-item media-img" src="./images/magnetFaces/Sunface3.png" alt="Image 3">
             </div>
-            <!-- https://www.youtube.com/embed/TLKQD8MMI4U -->
-            <div class="scrollable-media">
-                <form action="/upload" method="POST" enctype="multipart/form-data">
-                    <label for="file-upload">Upload a Photo, Video, or Media:</label>
-                    <input type="file" id="file-upload" name="media" accept="image/*,video/*">
-                    <button type="submit">Upload</button>
-                </form>
+            <div class="upload-container">
+                <label for="file-upload" class="upload-label">Upload Your Photo:</label>
+                <input type="file" id="file-upload" accept="image/*">
             </div>
         </div>
     </div>
@@ -98,26 +84,30 @@
                 <p class="material"><span>Material:</span> Wool</p>
                 <p class="material"><span>Process:</span> Felting</p>
             </div>
-            <div class="scrollable-media"> 
+            <div class="scrollable-media">
                 <iframe class="media-item" width="300" height="200" src="https://www.youtube.com/embed/8Yc6cZiP6nw"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen>
                 </iframe>
-                <img class="media-item media-img" src="./images/magnetFaces/orangeFace.jpg" alt="Image 1">
-                <img class="media-item media-img" src="./images/magnetFaces/blueFace-full body.jpg" alt="Image 2">
-                <img class="media-item media-img" src="./images/magnetFaces/Sunface3.png" alt="Image 3">
+                <img class="media-item media-img" src="./images/woolToys/IMG_3064.jpg" alt="Image 1">
+                <img class="media-item media-img" src="./images/woolToys/IMG_3080.jpg" alt="Image 2">
+                <img class="media-item media-img" src="./images/woolToys/IMG_3107.jpg" alt="Image 3">
             </div>
             <!-- https://www.youtube.com/embed/TLKQD8MMI4U -->
-            <h3 class="title">Make More of Mykind</h3>
-            <p class="material"><span>Buy from the Owner:</span> Link</p>
-            <p class="material"><span>Buy material & DIY:</span> Link</p>
+            <p class="material"><span>Buy material & DIY Yours:</span>
+                <a target="_blank" onclick="return confirmLeave()"
+                    href="https://www.temu.com/goods.html?_bg_fs=1&goods_id=601099579564444">TEMU</a>
+            </p>
+            <p class="material"><span>Buy more from the Owner:</span> Link</p>
         </div>
     </div>
 
     <div class="call-div-bg-color">
         <div class="call-div">
-            <button>Call Luka</button>
+            <button>Customize</button>
+            <button>Inquire</button>
+            <button>Make a Tip </button>
         </div>
     </div>
 </body>
