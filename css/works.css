@@ -5,7 +5,6 @@ main{
     border-radius: 0 0 0 2.5rem;
 }
 
-
 .img-div{
     display: flex;
     justify-content: center;
@@ -16,17 +15,11 @@ main{
     width: 80%;
     max-width: 400px;
     height: auto;
-    filter: drop-shadow(-12px 5px 12px rgba(0, 0, 0, 0.5)); /* Shadow around visible parts */
+    filter: drop-shadow(-12px 5px 12px rgba(0, 0, 0, 0.5)); 
 }
 
 .blueFace{
     filter: drop-shadow(10px 1px 6px rgba(0, 0, 0, 0.5));
-}
-
-.language-div{
-    display: flex;
-    justify-content: center;
-    user-select: none;
 }
 
 .speaker-div{
@@ -38,12 +31,13 @@ main{
 .speaker-on{
     position: absolute;
     margin-left: 10rem;
-    padding: 1.6rem;
+    z-index: 10;
 }
 
 @media screen and (max-width: 768px) {
     .speaker-on{
         right: -0.8rem;
+        z-index: 10;
     }
 }
 
@@ -73,8 +67,7 @@ main{
 .option-toy{
     width: 100%;
     height: auto;
-    filter: drop-shadow(-1px 2px 8px rgba(0, 0, 0, 0.5)); /* Shadow around visible parts */
-
+    filter: drop-shadow(-1px 2px 8px rgba(0, 0, 0, 0.5));
 }
 
 .info-div-bg-color{
