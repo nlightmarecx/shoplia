@@ -22,6 +22,12 @@ main{
     filter: drop-shadow(10px 1px 6px rgba(0, 0, 0, 0.5));
 }
 
+.language-div{
+    display: flex;
+    justify-content: center;
+    user-select: none;
+}
+
 .speaker-div{
     display: flex;
     justify-content: center;
@@ -31,12 +37,25 @@ main{
 .speaker-on{
     position: absolute;
     margin-left: 10rem;
+    margin-top: 3.7rem;
+    padding: 1rem;
+}
+
+.language{
+    position: absolute;
+    margin-top: 0;
+    margin-left: 10.2rem;
 }
 
 @media screen and (max-width: 768px) {
     .speaker-on{
         right: 1rem;
     }
+
+    .language{
+        right: 1.15rem;
+    }
+
 }
 
 .oth-optios-div{
