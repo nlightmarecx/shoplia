@@ -27,7 +27,6 @@ main {
     height: 120px;
     border-radius: 50%;
     margin: 0 auto 10px;
-    user-select: none;
 }
 
 .title {
@@ -61,8 +60,18 @@ main {
     overflow-x: auto;
     gap: 10px;
     padding: 10px;
+    margin-bottom: 0.5rem;
+}
+
+.scrollable-horizontal-list {
     scroll-behavior: smooth;
-    background: red;
+}
+
+.productContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
 }
 
 .product {
@@ -73,31 +82,67 @@ main {
     padding: 10px;
     background-color: #fff;
     text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.wide-product{
-    width: 250px;
+.landscape {
+    flex: 1 0 auto;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.wide-wide-product{
-    width:  100%;
+.pair{
+    display: flex;
+    justify-content: center;
+}
+
+.twins {
+    flex: 1 0 auto;
+    width: 130px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.landscape{
+    width: 240px;
+}
+
+
+.landscapeImg {
+    width: 350px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
 }
 
 .product img {
-    max-width: 100%;
     height: 150px;
-    width: 100%;
+    width: 120px;
     border-radius: 4px;
-/*    object-fit: cover;*/
+    object-fit: cover;
 }
 
 .product-name {
     font-size: 14px;
     color: #333;
     margin-top: 8px;
+    text-decoration: none;
 }
 
-/* NEWLY UPLOADED
 /* Hidden input for file upload */
 .hidden-input {
     display: none;
@@ -110,7 +155,6 @@ main {
     border: 1px dashed #aaa;
     background-color: #f0f0f0;
     transition: background-color 0.3s;
-    background: black; /*DELETE LATER */
 }
 
 .upload-product:hover {
@@ -123,7 +167,7 @@ main {
     width: 120px;
     border-radius: 4px;
     object-fit: cover;
-    background: url('./images/placeholders/blank-background.png') no-repeat center/cover;
+    background: url('./images/placeholders/productimg2.jpg') no-repeat center/cover;
     filter: grayscale(50%);
 }
 
@@ -136,113 +180,4 @@ main {
     color: #666;
     font-size: 14px;
     text-align: center;
-}
-
-/* ---------NEW-------------- */
-
-/* Reset Styles */
-body, h1, h2, p, img, a, div, section, header, main {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    text-align: center;
-    color: #333;
-}
-
-.content {
-    max-width: 600px;
-    margin: auto;
-    padding: 20px;
-}
-
-/* Profile Section */
-.profile {
-    margin-bottom: 20px;
-}
-
-.profile__image {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    margin: 0 auto 10px;
-}
-
-.profile__name {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 0.5rem 0;
-}
-
-.profile__bio {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-.profile__links {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-.social-link img {
-    width: 26px;
-    height: 26px;
-}
-
-/* Product Section */
-.products {
-    margin-top: 20px;
-}
-
-.product__container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-}
-
-.product {
-    width: 120px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    text-align: center;
-    padding: 10px;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.product:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.product__image {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 4px;
-}
-
-.product__image img{
-    width: 100%;
-    aspect-ratio: 16 / 16;
-}
-
-.product__name {
-    margin-top: 8px;
-    font-size: 14px;
-    color: #333;
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-    .product {
-        width: 100px;
-    }
 }
