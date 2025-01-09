@@ -24,6 +24,13 @@ main{
     user-select: none;
 }
 
+.speaker2-on{
+    position: absolute;
+    margin-left: 10rem;
+    margin-top: 4rem;
+    z-index: 12;
+}
+
 .speaker-on{
     position: absolute;
     margin-left: 10rem;
