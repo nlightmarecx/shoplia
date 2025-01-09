@@ -15,12 +15,8 @@ main{
     width: 80%;
     max-width: 400px;
     height: auto;
-    filter: drop-shadow(-12px 5px 12px rgba(0, 0, 0, 0.5)); 
 }
 
-.blueFace{
-    filter: drop-shadow(10px 1px 6px rgba(0, 0, 0, 0.5));
-}
 
 .speaker-div{
     display: flex;

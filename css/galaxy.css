@@ -1,0 +1,22 @@
+:root{
+    --headerGreen: rgba(0, 24, 32, 0.98);
+    --gradientBlue: radial-gradient(
+        rgb(4, 9, 40),
+        rgb(8, 18, 80),
+        rgb(8, 18, 80),
+        rgb(16, 36, 120),
+        rgb(16, 36, 120),
+        rgb(16, 36, 240)
+    );
+    --gradientBlack: radial-gradient(
+        rgb(0, 5, 30),
+        rgb(8, 18, 80),
+        rgb(0, 5, 30)
+    );
+}
+
+main{
+    background: center calc(50% - 40%)/280px no-repeat fixed url("../images/galaxy1.gif"), right/cover no-repeat fixed var(--gradientBlack);
+    
+}
+
