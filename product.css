@@ -186,6 +186,16 @@ main{
     border-radius: 0 2.5rem 0 0;
 }
 
+.call-div-bg-color-hedg{
+    background-color: white;
+}
+
+.call-div-hedg{
+    padding: 1rem;
+    background-color: rgb(248, 238, 226);
+    border-radius: 2.5rem 0 0 0;
+}
+
 .upload-container {
     margin-top: 1rem;
 }
