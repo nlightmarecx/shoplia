@@ -42,6 +42,12 @@ main{
         right: 1rem;
         z-index: 12;
     }
+
+    .speaker2-on{
+        right: 1rem;
+        margin-top: 4rem;
+        z-index: 12;
+    }
 }
 
 .oth-optios-div{
