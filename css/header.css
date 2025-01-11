@@ -2,4 +2,6 @@
     background-color: rgb(248, 238, 226);
     padding: 1.4rem 1.1rem 2.9rem 1.1rem;
     border-radius: 0 0 0 2.5rem;
+    display: flex;
+    justify-content: space-between;
 }

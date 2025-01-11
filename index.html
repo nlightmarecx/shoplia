@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flea Market Template</title>
-    <link rel="shortcut icon" href="images/webpageImg.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/icons/webpageImg.png" type="image/x-icon">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/buttons.css">
@@ -13,118 +13,90 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-        <!-- ----------- SECTION HEADER ----------- -->
-        <main>
-            <header>
-                <!-- DON'T DELETE: IMPORTANT TO KEEP A TOP MARGIN -->
-            </header>        
-        </main>
-
-        <div class="container">
+         <!-- ----------- SECTION HEADER ----------- -->
+         <section class="header-div">
+            <!-- DON'T DELETE (HEADER TOP BOX FOR WIDE SCREEN) -->
+            <!-- MAKE BOX W/ Container width for Nav buttons -->
+        </section>  
+        <header class="container"> 
             <!-- ----------- SECTION PROFILE INFO ----------- -->
-            <section class="sectionProfile section">
-                <img src="./images/profile.jpg" alt="Profile Picture" class="profile-pic">
+            <section class="profile-info">
+                <img src="./images/Placeholders/profile-pic-female.jpg" alt="Profile Picture" 
+                class="profile-pic">
                 <div class="title">
-                    Eline Melissen
+                    სახელი გვარი
                 </div>
-                <div class="description">Sculpting the surreal<br>
-                    Ceramist/designer based in the Netherlands
-                </div>
-                <!-- ----------- SOCIAL LINKS ----------- -->
-                <div class="social-links">
-                    <a href="https://elinemelissen.com/" target="_blank">
-                        <img src="../images/icons/sosialMedias/website.png" alt="Go Back" class="shop-icon"
-                        width="26" height="26">
-                    </a>
-                    <a href="https://www.instagram.com/elinemelissen/" target="_blank">
-                        <img src="../images/icons/sosialMedias/instagram.png" alt="Go Back" class="shop-icon"
-                        width="25" height="25">
-                    </a>
-                    <a href="https://www.behance.net/elinemelissen" target="_blank">
-                        <img src="../images/icons/sosialMedias/behance.png" alt="Go Back" class="shop-icon"
-                        width="25" height="25">
-                    </a>
-                    <a href="https://vimeo.com/user82089464" target="_blank">
-                        <img src="images/icons/sosialMedias/vimeo.png" alt="Go Back" class="shop-icon"
-                        width="25" height="25">
-                    </a>
-                    <a href="mailto:info.elinemelissen@gmail.com" target="_blank">
-                        <img src="../images/icons/sosialMedias/mail.png" aria-label="Send Email" alt="Go Back" class="shop-icon"
-                        width="25" height="25">
-                    </a>
+                <div class="description">მაღაზიის სახელი<br>
+                    მაღაზიის პროდუქცია და განსაკუთრებულობა
                 </div>
             </section>
+            <!-- ----------- SOCIAL LINKS ----------- -->
+            <section class="social-links">
+                <a href="https://elinemelissen.com/" target="_blank">
+                    <img src="../images/icons/sosialMedias/website.png" alt="Go Back" class="shop-icon"
+                    width="26" height="26">
+                </a>
+                <a href="https://www.instagram.com/elinemelissen/" target="_blank">
+                    <img src="../images/icons/sosialMedias/instagram.png" alt="Go Back" class="shop-icon"
+                    width="25" height="25">
+                </a>
+                <a href="https://www.behance.net/elinemelissen" target="_blank">
+                    <img src="../images/icons/sosialMedias/behance.png" alt="Go Back" class="shop-icon"
+                    width="25" height="25">
+                </a>
+                <a href="https://vimeo.com/user82089464" target="_blank">
+                    <img src="images/icons/sosialMedias/vimeo.png" alt="Go Back" class="shop-icon"
+                    width="25" height="25">
+                </a>
+                <a href="mailto:info.elinemelissen@gmail.com" target="_blank">
+                    <img src="../images/icons/sosialMedias/mail.png" aria-label="Send Email" alt="Go Back" class="shop-icon"
+                    width="25" height="25">
+                </a>
+            </section>
+        </header>    
+
+        <main class="container">
             <!-- ----------- SECTION PRODUCTS ----------- -->
             <section class="sectionProducts section">
-                <!-- ----------- INFINITY FLUX ----------- -->
-                <!-- ----------- PRODUCT: 1 UPLOAD + 4 INFINITY FLUX ----------- -->
+                <!-- ----------- SECTION: SHOP PICTURE ----------- -->
+                <div class="productContainer">
+                    <a href="./introspection/introspection.html" class="landscape">
+                        <img src="./images/Placeholders/upload-product-img.png" alt="Product 1" class="landscapeImg">
+                        <h2 class="product-name">ჩვენი ადგილმდებარეობა</h2>
+                    </a>
+                </div>
+                <!-- ----------- SECTION: PRODUCTS = ----------- -->
                 <div class="product-list scrollable-horizontal-list">
-                    <div class="product upload-product">
-                        <label for="upload-input">
-                            <img src="./images/Placeholders/productimg3.png" alt="Upload Your Image" class="upload-placeholder">
-                            <div class="product-name">Upload Product</div>
-                        </label>
-                        <input type="file" id="upload-input" accept="image/*" class="hidden-input">
-                    </div>
+
+                    <a class="nav header" href="services.html"><div class="product">
+                    <img src="./images/woolToys/IMG_3107.jpg" alt="Product 2">
+                    <div class="product-name">თექა</div></div></a>
 
                     <a class="nav header" href="infinityFlux/sunFace.html"><div class="product">
                     <img src="./images/magnetFaces/SunFace.jpg" alt="Product 2">
-                    <div class="product-name">Anxiety</div></div></a>
+                    <div class="product-name">სკულპტურები</div></div></a>
 
-                    <a class="nav header" href="infinityFlux/blueFace.html"><div class="product">
-                    <img src="./images/magnetFaces/blueFace-full body.jpg" alt="Product 1">
-                    <div class="product-name">Choice</div></div></a>
+                    <a class="nav header" href="infinityFlux/sunFace.html"><div class="product">
+                    <img src="./images/Placeholders/upload-product-img.png" alt="Product 1">
+                    <div class="product-name">სხვადასხვა</div></div></a>
     
-                    <a class="nav header" href="infinityFlux/skyblueFace.html"><div class="product">
-                    <img src="./images/magnetFaces/skyblueFace.jpg" alt="Product 2">
-                    <div class="product-name">Interest</div></div></a>
+                    <a class="nav header" href="infinityFlux/sunFace.html"><div class="product">
+                    <img src="./images/Placeholders/upload-product-img.png" alt="Product 2">
+                    <div class="product-name">სხვადასხვა</div></div></a>
                     
-                    <a class="nav header" href="infinityFlux/pinkFace.html"><div class="product">
-                    <img src="./images/magnetFaces/PinkFace-full body.jpg" alt="Product 1">
-                    <div class="product-name">Passion</div></div></a>
-                </div>
-                <!-- ----------- PRODUCT: 1 INTROSPECTION ----------- -->
-                <div class="productContainer">
-                    <a href="./introspection/introspection.html" class="landscape">
-                        <img src="./images/Introspection/Introspection.jpg" alt="Product 1" class="landscapeImg">
-                        <h2 class="product-name">Introspection</h2>
-                    </a>
-                </div>
-                <!-- ----------- PRODUCT: 1 INTROSPECTION ----------- -->
-                <div class="product-list pair">
-                    <a href="./guardedminds/guardedminds.html">
-                        <img src="./images/guardedMinds/guarded-minds1.jpg" alt="Product 1" class="twins">
-                        <h2 class="product-name">Guarded Minds</h2>
-                    </a>
-                    <a href="./guardedminds/guardedminds.html">
-                        <img src="./images/guardedMinds/guarded-minds2.jpg" alt="Product 1" class="twins">
-                        <h2 class="product-name">Guarded Minds</h2>
-                    </a>
-                </div>
-                <!-- ----------- PRODUCT: Enschede ----------- -->
-                <div class="product-list pair">
-                    <a href="./enschede/enschede1.html">
-                        <img src="./images/enschede/enschede1.jpg" alt="Product 1" class="twins">
-                        <h2 class="product-name">Sun Rise</h2>
-                    </a>
-                    <a href="./enschede/enschede2.html">
-                        <img src="./images/enschede/enschede2.jpg" alt="Product 1" class="twins">
-                        <h2 class="product-name">Gossip</h2>
-                    </a>
-                    <a href="./enschede/enschede3.html">
-                        <img src="./images/enschede/enschede3.jpg" alt="Product 1" class="twins">
-                        <h2 class="product-name">Street Dog</h2>
-                    </a>
+                    <a class="nav header" href="infinityFlux/sunFace.html"><div class="product">
+                    <img src="./images/Placeholders/upload-product-img.png" alt="Product 1">
+                    <div class="product-name">სხვადასხვა</div></div></a>
                 </div>
             </section>
-            <footer>
-                <p>
-                    <a href="https://github.com/nlightmarecx" target="_blank"> Made by a <span class="mygithub">friend</span> of </a>
-                    <a href="./services.html" target="_blank">  
-                        <img src="./images/woolToys/hedgehog.png" alt="GitHub Logo" width="14" height="14">  
-                    </a>
-                </p>
-            </footer>
-        </div>
+        </main>
+        <footer>
+            <p>
+                <a href="https://github.com/nlightmarecx" target="_blank">საიტი დამზადებულია <span class="mygithub">ლუკა ბაღდავაძის</span> მიერ </a>
+                <a href="./services.html" target="_blank">  
+                    <img src="./images/woolToys/hedgehog.png" alt="GitHub Logo" width="14" height="14">  
+                </a>
+            </p>
+        </footer>
 </body>
 </html>
