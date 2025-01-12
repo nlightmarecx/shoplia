@@ -1,0 +1,13 @@
+.wine-thieves{
+    position: absolute;
+    margin-left: 30rem;
+    z-index: 12;
+}
+
+@media screen and (max-width: 768px) {
+    .wine-thieves{
+        right: 0.5rem;
+        top: 23.5rem;
+        z-index: 12;
+    }
+}
